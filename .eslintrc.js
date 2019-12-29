@@ -3,6 +3,7 @@ module.exports = {
     __PATH_PREFIX__: true,
   },
   extends: [
+    `plugin:react/recommended`,
     `plugin:@typescript-eslint/eslint-recommended`,
     `plugin:@typescript-eslint/recommended`,
     `eslint-config-prettier/@typescript-eslint`,
@@ -14,7 +15,7 @@ module.exports = {
       parserOptions: {
         project: 'tsconfig.json',
       },
-      plugins: ['@typescript-eslint/eslint-plugin'],
+      plugins: ['@typescript-eslint/eslint-plugin', 'react'],
     },
   ],
 };
