@@ -1,0 +1,78 @@
+{
+  "name": "edouardr.fr",
+  "private": true,
+  "description": "Edouard's website. A tech blog.",
+  "version": "0.1.0",
+  "author": "Edouard Riviere <riviere.edouard@gmail.com>",
+  "dependencies": {
+    "gatsby": "^2.18.17",
+    "gatsby-image": "^2.2.37",
+    "gatsby-plugin-manifest": "^2.2.34",
+    "gatsby-plugin-offline": "^3.0.30",
+    "gatsby-plugin-react-helmet": "^3.1.18",
+    "gatsby-plugin-sharp": "^2.3.10",
+    "gatsby-plugin-typescript": "^2.1.23",
+    "gatsby-source-filesystem": "^2.1.43",
+    "gatsby-transformer-sharp": "^2.3.9",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.7.7",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@types/jest": "^24.0.25",
+    "@types/node": "^13.1.1",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "@types/react-helmet": "^5.0.14",
+    "@typescript-eslint/eslint-plugin": "^2.13.0",
+    "@typescript-eslint/parser": "^2.13.0",
+    "babel-jest": "^24.9.0",
+    "babel-preset-gatsby": "^0.2.26",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.17.0",
+    "husky": "^3.1.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.9.0",
+    "lint-staged": "^9.5.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.19.1",
+    "react-test-renderer": "^16.12.0",
+    "typescript": "^3.7.4"
+  },
+  "keywords": [
+    "blog",
+    "tech",
+    "personal",
+    "edouardr"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop",
+    "format": "npm run prettier -- --write",
+    "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
+    "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|jsx|json|css|scss|ts|tsx|md|mdx)\"",
+    "serve": "gatsby serve",
+    "setup": "npm install && npm validate",
+    "start": "npm run develop",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "type-check": "tsc --noEmit",
+    "validate": "npm-run-all --parallel type-check format lint && jest && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edouardr/edouardr.fr"
+  },
+  "bugs": {
+    "url": "https://github.com/edouardr/edouardr.fr/issues"
+  }
+}
