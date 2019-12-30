@@ -27,3 +27,6 @@ node_modules/
 # gatsby files
 .cache/
 public
+
+#vscode files
+.vscode
