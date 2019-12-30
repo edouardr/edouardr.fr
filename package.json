@@ -61,11 +61,12 @@
     "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
     "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|jsx|json|css|scss|ts|tsx|md|mdx)\"",
     "serve": "gatsby serve",
+    "setup": "npm install && npm validate",
     "start": "npm run develop",
     "test": "jest --coverage",
     "test:watch": "jest --watch",
     "type-check": "tsc --noEmit",
-    "validate": "npm-run-all --parallel type-check format lint build"
+    "validate": "npm-run-all --parallel type-check format lint && jest && npm run build"
   },
   "repository": {
     "type": "git",
