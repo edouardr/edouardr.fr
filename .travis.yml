@@ -29,6 +29,7 @@ deploy:
   bucket: test-edouardr
   acl: 'public_read'
   local_dir: ./public
+  skip_cleanup: true
   region: eu-west-3
   on:
     repo: edouardr/edouardr.fr
