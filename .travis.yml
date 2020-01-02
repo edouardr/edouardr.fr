@@ -20,18 +20,26 @@ script:
   - npm run setup
   - sonar-scanner
 deploy:
-  edge: true
-  provider: s3
-  on:
-    all_branch: true
-    condition: $TRAVIS_BRANCH =~ ^release\/.*$
+  - edge: true
+    provider: s3
     upload_dir: $AWS_UPLOAD_DIR_REL
-  on:
-    branch: master
-    upload_dir: production
-  access_key_id: $AWS_ACCESS_KEY_ID
-  secret_access_key: $AWS_SECRET_ACCESS_KEY
-  bucket: $AWS_BUCKET
-  local_dir: $AWS_LOCAL_DIR
-  region: $AWS_REGION
-  verbose: true
+    access_key_id: $AWS_ACCESS_KEY_ID
+    secret_access_key: $AWS_SECRET_ACCESS_KEY
+    bucket: $AWS_BUCKET
+    local_dir: $AWS_LOCAL_DIR
+    region: $AWS_REGION
+    verbose: true
+    on:
+      all_branch: true
+      condition: $TRAVIS_BRANCH =~ ^release\/.*$
+  - edge: true
+    provider: s3
+    upload_dir: $AWS_UPLOAD_DIR
+    access_key_id: $AWS_ACCESS_KEY_ID
+    secret_access_key: $AWS_SECRET_ACCESS_KEY
+    bucket: $AWS_BUCKET
+    local_dir: $AWS_LOCAL_DIR
+    region: $AWS_REGION
+    verbose: true
+    on:
+      branch: master
