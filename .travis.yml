@@ -30,7 +30,7 @@ deploy:
     region: $AWS_REGION
     verbose: true
     on:
-      all_branch: true
+      all_branches: true
       condition: $TRAVIS_BRANCH =~ ^release\/.*$
   - edge: true
     provider: s3
