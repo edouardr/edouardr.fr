@@ -10,6 +10,7 @@ install: echo "install happens as part of setup"
 branches:
   only:
     - master
+    - /^release\/.*$/
 addons:
   sonarcloud:
     organization: edouardr-github
@@ -19,11 +20,26 @@ script:
   - npm run setup
   - sonar-scanner
 deploy:
-  edge: true
-  provider: s3
-  access_key_id: $AWS_ACCESS_KEY_ID
-  secret_access_key: $AWS_SECRET_ACCESS_KEY
-  bucket: test-edouardr
-  acl: 'public_read'
-  local_dir: ./public
-  region: eu-west-3
+  - edge: true
+    provider: s3
+    upload_dir: $AWS_UPLOAD_DIR_REL
+    access_key_id: $AWS_ACCESS_KEY_ID
+    secret_access_key: $AWS_SECRET_ACCESS_KEY
+    bucket: $AWS_BUCKET
+    local_dir: $AWS_LOCAL_DIR
+    region: $AWS_REGION
+    verbose: true
+    on:
+      all_branch: true
+      condition: $TRAVIS_BRANCH =~ ^release\/.*$
+  - edge: true
+    provider: s3
+    upload_dir: $AWS_UPLOAD_DIR
+    access_key_id: $AWS_ACCESS_KEY_ID
+    secret_access_key: $AWS_SECRET_ACCESS_KEY
+    bucket: $AWS_BUCKET
+    local_dir: $AWS_LOCAL_DIR
+    region: $AWS_REGION
+    verbose: true
+    on:
+      branch: master
