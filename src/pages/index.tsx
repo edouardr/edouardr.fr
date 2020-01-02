@@ -23,7 +23,7 @@ const IndexPage = (): JSX.Element => (
         Now go build something great.
       </p>
     </div>
-    <div className="absolute inset-0 h-full w-full object-cover object-center">
+    <div className="inset-0 h-full w-full object-cover object-center">
       <Image />
     </div>
   </Layout>

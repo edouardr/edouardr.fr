@@ -2,15 +2,34 @@ import * as React from 'react';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
+interface MetaAttribute {
+  name: string;
+  content: string;
+}
+
 interface SEOProps {
   description: string;
   lang: string;
-  meta: any[];
+  meta: MetaAttribute[];
   title: string;
 }
 
+interface SiteQuery {
+  site: Site;
+}
+
+interface Site {
+  siteMetadata: SiteMetadata;
+}
+
+interface SiteMetadata {
+  title: string;
+  description: string;
+  author: string;
+}
+
 const SEO = ({ description, lang, meta, title }: SEOProps): JSX.Element => {
-  const { site } = useStaticQuery(
+  const { site } = useStaticQuery<SiteQuery>(
     graphql`
       query {
         site {
