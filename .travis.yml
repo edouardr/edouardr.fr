@@ -18,6 +18,8 @@ addons:
 script:
   - npm run setup
   - sonar-scanner
+before_deploy:
+  - cd $TRAVIS_BUILD_DIR
 deploy:
   provider: s3
   access_key_id:
