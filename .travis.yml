@@ -26,5 +26,6 @@ deploy:
     secure: jZed8ipm6Yd2TZ0wXOTwEKgEFmJkn3ZTy4n4CvWLbq4MEjV0LXaP+BqLEiTEk1yq0NdBlVxTJyBU/XH9gIzk9aNOtNPcqUX+8fbXB4PE1NpZfAfT+S15oQWNrUr2K/+6ohuDjhaJTHey8tFeZ318LI82yL2lRr8ViCsC5FOz8MGp8yzA+lEHtwSHSh6Z3XrMonRqLrOKIGL9n+nhHvyi7402gBggZRiR9eNCbGEG0FLMppBKM4IlwaGduCwgJ6nFtvz50mI3YVgaLaTqeYN8DmTTDs8SiIMttesz8wkz21fXz75txyWCDTjnmlbx7ubmvSZfPAoyyVxC8IC/7F2k0MONq/YPXbTUSma7/gAdHbXdBh+WA1mASvlBBNO1rTK30mM9DSzBEe9Q0jiyORyOpehtzJ6TMweIXON0BVUmWN4L+1AWSAi5QL9NjjAEDFdw6k6TE0mLzN0G9Wobh22MB/pQvUuTEx9CbMZ/gyZgUy9cRxALf0eBKKkEJy8ds7B9/UpY8TPneHby3NTdDgMGmbjC3CKXDUyO3TPgl1G1Iwa4oilg1kCqL4OYZt0WIliGatHD4JTcK7ytatctgEuHjI/Bjm48W6NjJrE8U4/EMA4QxpSa4Ah+1G7Ksgam3fKz4Z26KbYGB/p/++BkJ2PtSl5zXxl+CoUGAmp5NZp97FI=
   bucket: test-edouardr
   acl: 'public_read'
+  local_dir: ./public
   on:
     repo: edouardr/edouardr.fr
