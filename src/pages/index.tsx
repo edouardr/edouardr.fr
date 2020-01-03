@@ -6,11 +6,14 @@ import SEO from '../components/seo';
 const IndexPage = (): JSX.Element => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+    <div className="p-8 flex items-center justify-center">
       <Image />
+    </div>
+    <div className="flex items-center justify-center">
+      <h1 className="text-2xl font-bold text-gray-900 leading-tight sm:text-4xl lg:text-3xl xl:text-4xl">
+        Coming
+        <span className="text-greenlight-500">&nbsp;Soon.</span>
+      </h1>
     </div>
   </Layout>
 );

@@ -11,6 +11,7 @@
 
 - GatsbyJS
 - TypeScript
+- Tailwind CSS
 - Jest
 - SonarCloud
 
