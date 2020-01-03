@@ -32,4 +32,5 @@ deploy:
   provider: script
   script: awss3-deploy
   edge: true
-  verbose: true
+  on:
+    all_branches: true
