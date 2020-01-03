@@ -30,10 +30,8 @@ project. If everything works correctly, project is setup as expected.
 [MIT](LICENSE)
 
 <!-- prettier-ignore-start -->
-[npm]: https://www.npmjs.com/
-[node]: https://nodejs.org
-[build-badge]: https://travis-ci.org/edouardr/edouardr.fr.svg?branch=master
-[build]: https://travis-ci.org/edouardr/edouardr.fr
+[build-badge]: https://travis-ci.com/edouardr/edouardr.fr.svg?branch=master
+[build]: https://travis-ci.com/edouardr/edouardr.fr
 [coverage-badge]: https://sonarcloud.io/api/project_badges/measure?project=edouardr_edouardr.fr&metric=coverage
 [coverage]: https://sonarcloud.io/dashboard?id=edouardr_edouardr.fr
 [maintainability-rating-badge]: https://sonarcloud.io/api/project_badges/measure?project=edouardr_edouardr.fr&metric=sqale_rating
