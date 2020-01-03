@@ -2,7 +2,7 @@
   "name": "edouardr.fr",
   "private": true,
   "description": "Edouard's website. A tech blog.",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "author": "Edouard Riviere <riviere.edouard@gmail.com>",
   "dependencies": {
     "gatsby": "^2.18.17",
@@ -30,6 +30,7 @@
     "@types/react-helmet": "^5.0.14",
     "@typescript-eslint/eslint-plugin": "^2.13.0",
     "@typescript-eslint/parser": "^2.13.0",
+    "awss3-deploy": "^1.0.1",
     "babel-jest": "^24.9.0",
     "babel-preset-gatsby": "^0.2.26",
     "eslint": "^6.8.0",
