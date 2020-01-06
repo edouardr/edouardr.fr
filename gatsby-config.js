@@ -57,6 +57,7 @@ module.exports = {
         purgeOnly: ['src/css/style.css', 'src/css/global.css'],
       },
     },
+    `gatsby-plugin-offline`,
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
