@@ -1,7 +1,8 @@
 {
   "ci": {
     "collect": {
-      "staticDistDir": "./public"
+      "staticDistDir": "./public",
+      "numberOfRuns": 2
     },
     "assert": {
       "preset": "lighthouse:recommended"
