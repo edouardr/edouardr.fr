@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
+import { Author } from '../../config/website';
 
 interface MetaAttribute {
   name: string;
@@ -25,7 +26,7 @@ interface Site {
 interface SiteMetadata {
   title: string;
   description: string;
-  author: string;
+  author: Author;
 }
 
 const SEO = ({ description, lang, meta, title }: SEOProps): JSX.Element => {
@@ -36,7 +37,9 @@ const SEO = ({ description, lang, meta, title }: SEOProps): JSX.Element => {
           siteMetadata {
             title
             description
-            author
+            author {
+              name
+            }
           }
         }
       }
@@ -75,7 +78,7 @@ const SEO = ({ description, lang, meta, title }: SEOProps): JSX.Element => {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: site.siteMetadata.author.name,
         },
         {
           name: `twitter:title`,
