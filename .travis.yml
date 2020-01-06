@@ -25,7 +25,7 @@ script:
   - npm run setup
   - sonar-scanner
 after_success:
-  - lhci autorun --upload.target=temporary-public-storage
+  - lhci autorun
 before_deploy:
   - export BUCKET=$AWS_BUCKET LOCAL_DIR=$AWS_LOCAL_DIR
     UPLOAD_DIR=$AWS_UPLOAD_DIR
