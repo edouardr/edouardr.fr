@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/',
   siteTitle: 'edouardr.fr',
   siteTitleAlt: 'The personal website of Edouard Riviere',
   siteTitleShort: 'edouardr',
@@ -15,4 +16,6 @@ module.exports = {
   twitterHandle: '@edouardr_',
   github: 'https://github.com/edouardr/',
   linkedin: 'https://www.linkedin.com/in/edouardr/',
+  themeColor: '#1F6537',
+  backgroundColor: '#091E11',
 };
