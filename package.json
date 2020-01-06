@@ -2,7 +2,7 @@
   "name": "edouardr.fr",
   "private": true,
   "description": "Edouard's website. A tech blog.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "Edouard Riviere <riviere.edouard@gmail.com>",
   "dependencies": {
     "gatsby": "^2.18.17",
@@ -12,7 +12,9 @@
     "gatsby-plugin-postcss": "^2.1.18",
     "gatsby-plugin-purgecss": "^4.0.1",
     "gatsby-plugin-react-helmet": "^3.1.18",
+    "gatsby-plugin-robots-txt": "^1.5.0",
     "gatsby-plugin-sharp": "^2.3.10",
+    "gatsby-plugin-sitemap": "^2.2.24",
     "gatsby-plugin-typescript": "^2.1.23",
     "gatsby-source-filesystem": "^2.1.43",
     "gatsby-transformer-sharp": "^2.3.9",
