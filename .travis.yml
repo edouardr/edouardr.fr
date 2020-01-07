@@ -9,7 +9,7 @@ notifications:
   email: false
 node_js: '12'
 before_install:
-  - npm install -g @lhci/cli@0.3.x
+  - npm install -g @lhci/cli@0.3.x awss3-deploy
 install: echo "install happens as part of setup"
 branches:
   only:
