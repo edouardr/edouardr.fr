@@ -2,7 +2,7 @@
   "name": "edouardr.fr",
   "private": true,
   "description": "Edouard's website. A tech blog.",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "author": "Edouard Riviere <riviere.edouard@gmail.com>",
   "dependencies": {
     "gatsby": "^2.18.18",
