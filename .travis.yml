@@ -15,6 +15,7 @@ branches:
   only:
     - master
     - /^release\/.*$/
+    - develop
 addons:
   sonarcloud:
     organization: edouardr-github
