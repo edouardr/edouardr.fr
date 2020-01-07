@@ -9,12 +9,13 @@ notifications:
   email: false
 node_js: '12'
 before_install:
-  - npm install -g @lhci/cli@0.3.x
+  - npm install -g @lhci/cli@0.3.x awss3-deploy
 install: echo "install happens as part of setup"
 branches:
   only:
     - master
     - /^release\/.*$/
+    - develop
 addons:
   sonarcloud:
     organization: edouardr-github
@@ -39,3 +40,4 @@ deploy:
   edge: true
   on:
     all_branches: true
+    condition: $TRAVIS_BRANCH =~ /^release\/.*$/ || $TRAVIS_BRANCH = master
