@@ -35,10 +35,9 @@ before_deploy:
       export UPLOAD_DIR=$AWS_UPLOAD_DIR_REL
     fi
 deploy:
-  provider: script
-  script: awss3-deploy
-  edge: true
-  on:
-    all_branches: true
-    condition:
-      (($TRAVIS_BRANCH =~ /^release\/.*$/) OR ($TRAVIS_BRANCH = master))
+  - if: ($TRAVIS_BRANCH =~ /^release\/.*$/) OR ($TRAVIS_BRANCH = master)
+    provider: script
+    script: awss3-deploy
+    edge: true
+    on:
+      all_branches: true
