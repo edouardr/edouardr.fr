@@ -7,8 +7,8 @@ const Image = (): JSX.Element => {
     query {
       placeholderImage: file(relativePath: { eq: "ed-working.jpeg" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
+          fluid(maxWidth: 300, quality: 80) {
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
