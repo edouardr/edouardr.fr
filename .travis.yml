@@ -40,4 +40,4 @@ deploy:
   edge: true
   on:
     all_branches: true
-    condition: $TRAVIS_BRANCH =~ /^release\/.*$/ || $TRAVIS_BRANCH = master
+    condition: $TRAVIS_BRANCH =~ /^release\/.*$/ OR $TRAVIS_BRANCH = master
