@@ -27,7 +27,7 @@
       }
     },
     "upload": {
-      "target": "temporary-public-storage"
+      "serverBaseUrl": "http://lhci.edouardr.fr"
     }
   }
 }

@@ -2,7 +2,7 @@ import * as React from 'react';
 import Footer from './footer';
 
 interface LayoutProps {
-  children: any[];
+  children: React.ReactNode;
 }
 
 const Layout = ({ children }: LayoutProps): JSX.Element => {
