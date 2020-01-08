@@ -1,14 +1,15 @@
 import * as React from 'react';
-import { Twitter, GitHub, LinkedIn } from './social';
+import { Twitter, GitHub, LinkedIn, RSS } from './social';
 
 const Footer = (): JSX.Element => {
   return (
     <>
-      <footer className="w-full text-center p-4 pin-b">
-        <div className="p-8 flex items-center justify-center text-greenlight-900">
+      <footer className="absolute w-full bottom-0 p-4 bg-greenlight-900">
+        <div className="flex text-greenlight-100 items-center justify-center">
           <LinkedIn />
           <GitHub />
           <Twitter />
+          <RSS />
         </div>
       </footer>
     </>
