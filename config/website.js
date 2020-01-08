@@ -16,7 +16,7 @@ module.exports = {
   twitterHandle: '@edouardr_',
   github: 'https://github.com/edouardr/',
   linkedin: 'https://www.linkedin.com/in/edouardr/',
-  rss: 'https://www.edouardr.fr/rss.xml',
+  rss: '/rss.xml',
   themeColor: '#1F6537',
   backgroundColor: '#091E11',
 };
