@@ -9,9 +9,9 @@ interface MetaAttribute {
 }
 
 interface SEOProps {
-  description: string;
-  lang: string;
-  meta: MetaAttribute[];
+  description?: string;
+  lang?: string;
+  meta?: MetaAttribute[];
   title: string;
 }
 
@@ -29,7 +29,12 @@ interface SiteMetadata {
   author: Author;
 }
 
-const SEO = ({ description, lang, meta, title }: SEOProps): JSX.Element => {
+const SEO = ({
+  description,
+  lang = `en`,
+  meta = [],
+  title = ``,
+}: SEOProps): JSX.Element => {
   const { site } = useStaticQuery<SiteQuery>(
     graphql`
       query {
@@ -91,12 +96,6 @@ const SEO = ({ description, lang, meta, title }: SEOProps): JSX.Element => {
       ].concat(meta)}
     />
   );
-};
-
-SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  description: ``,
 };
 
 export default SEO;
