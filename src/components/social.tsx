@@ -10,7 +10,13 @@ export const Twitter = ({
   className,
   url = `${config.twitter}`,
 }: SocialLink) => (
-  <a href={url} aria-label="Visit my Twitter" className={`${className} ml-5`}>
+  <a
+    href={url}
+    aria-label="Visit my Twitter"
+    className={`${className} ml-5`}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="24"
@@ -30,7 +36,13 @@ export const LinkedIn = ({
   className,
   url = `${config.linkedin}`,
 }: SocialLink) => (
-  <a href={url} aria-label="Visit my LinkedIn" className={`${className} ml-5`}>
+  <a
+    href={url}
+    aria-label="Visit my LinkedIn"
+    className={`${className} ml-5`}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="23"
@@ -46,7 +58,13 @@ export const LinkedIn = ({
 );
 
 export const GitHub = ({ className, url = `${config.github}` }: SocialLink) => (
-  <a href={url} aria-label="Visit my GitHub" className={`${className} ml-5`}>
+  <a
+    href={url}
+    aria-label="Visit my GitHub"
+    className={`${className} ml-5`}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="23"
@@ -63,7 +81,13 @@ export const GitHub = ({ className, url = `${config.github}` }: SocialLink) => (
 );
 
 export const RSS = ({ className, url = `${config.rss}` }: SocialLink) => (
-  <a href={url} aria-label="RSS Feed" className={`${className} ml-5`}>
+  <a
+    href={url}
+    aria-label="RSS Feed"
+    className={`${className} ml-5`}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="23"
