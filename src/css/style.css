@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.social-icon {
+  @apply ml-5;
+}
+
+.social-icon-hover {
+  @apply text-greenlight-300;
+}
+
+.social-icon:hover {
+  @apply social-icon-hover;
+}

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'gatsby';
 
 const Header = (): JSX.Element => {
   return (
@@ -18,18 +19,18 @@ const Header = (): JSX.Element => {
               <div className="flex flex-grow relative">
                 <div className="lg:h-full absolute right-0 lg:flex justify-between px-6">
                   <div className="flex justify-start items-center text-greenlight-900">
-                    <a
+                    <Link
                       className="block flex hover:text-greenlight-500 mr-5"
-                      href="/blog"
+                      to="/blog"
                     >
                       Blog
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       className="block flex items-end hover:text-greenlight-500"
-                      href="/use-cases"
+                      to="/use-cases"
                     >
                       Use Cases
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

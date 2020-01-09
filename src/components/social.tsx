@@ -13,7 +13,7 @@ export const Twitter = ({
   <a
     href={url}
     aria-label="Visit my Twitter"
-    className={`${className} ml-5`}
+    className={`${className} social-icon`}
     target="_blank"
     rel="noopener noreferrer"
   >
@@ -39,7 +39,7 @@ export const LinkedIn = ({
   <a
     href={url}
     aria-label="Visit my LinkedIn"
-    className={`${className} ml-5`}
+    className={`${className} social-icon`}
     target="_blank"
     rel="noopener noreferrer"
   >
@@ -61,7 +61,7 @@ export const GitHub = ({ className, url = `${config.github}` }: SocialLink) => (
   <a
     href={url}
     aria-label="Visit my GitHub"
-    className={`${className} ml-5`}
+    className={`${className} social-icon`}
     target="_blank"
     rel="noopener noreferrer"
   >
@@ -84,7 +84,7 @@ export const RSS = ({ className, url = `${config.rss}` }: SocialLink) => (
   <a
     href={url}
     aria-label="RSS Feed"
-    className={`${className} ml-5`}
+    className={`${className} social-icon`}
     target="_blank"
     rel="noopener noreferrer"
   >
