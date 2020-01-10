@@ -1,3 +1,6 @@
+if:
+  (type = push AND (branch = master OR branch =~ /^release\/.*$/)) OR (type =
+  pull_request AND branch = develop)
 dist: trusty
 language: node_js
 before_cache:
@@ -11,11 +14,6 @@ node_js: '12'
 before_install:
   - npm install -g @lhci/cli@0.3.x awss3-deploy
 install: echo "install happens as part of setup"
-branches:
-  only:
-    - master
-    - /^release\/.*$/
-    - develop
 addons:
   sonarcloud:
     organization: edouardr-github

@@ -4,11 +4,11 @@ import Footer from '../footer';
 
 describe(`Footer`, () => {
   it(`renders all social links`, () => {
-    const expectedTitle = /^Visit my/;
+    const expectedTitle = /^Visit my|RSS/;
     const { getAllByLabelText } = render(<Footer />);
 
     const links = getAllByLabelText(expectedTitle);
 
-    expect(links.length).toEqual(3);
+    expect(links.length).toEqual(4);
   });
 });

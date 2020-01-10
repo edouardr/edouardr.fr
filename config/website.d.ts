@@ -16,6 +16,7 @@ export declare interface WebsiteConfig {
   twitterHandle: string;
   github: string;
   linkedin: string;
+  rss: string;
 }
 declare const config: WebsiteConfig;
 export default config;
