@@ -1,4 +1,7 @@
 module.exports = {
+  modules: {
+    fonts: false,
+  },
   theme: {
     extend: {
       colors: {
