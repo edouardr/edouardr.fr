@@ -30,7 +30,7 @@ const Layout = ({ children }: LayoutProps): JSX.Element => {
           </div>
           <div
             id="content-wrapper"
-            className="w-full bg-gray-100 lg:w-3/5 lg:shadow-xl lg:px-10"
+            className="w-full bg-gray-100 lg:w-3/5 lg:shadow-2xl lg:px-10 lg:rounded-l-lg"
           >
             <Header />
             <div id="content">{children}</div>
