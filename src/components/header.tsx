@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 const Header = (): JSX.Element => {
   return (
     <>
-      <div id="header">
+      <div id="header" className="hidden lg:block">
         <div className="flex top-0 inset-x-0 z-100 h-16 items-center">
           <div className="w-full max-w-screen-xl mx-auto px-6">
             <div className="flex items-center -mx-6">
@@ -20,14 +20,16 @@ const Header = (): JSX.Element => {
                 <div className="lg:h-full absolute right-0 lg:flex justify-between px-6">
                   <div className="flex justify-start items-center text-greenlight-900">
                     <Link
-                      className="block flex hover:text-greenlight-500 mr-5"
+                      className="link"
                       to="/blog"
+                      activeClassName="link-active"
                     >
                       Blog
                     </Link>
                     <Link
-                      className="block flex items-end hover:text-greenlight-500"
+                      className="link"
                       to="/use-cases"
+                      activeClassName="link-active"
                     >
                       Use Cases
                     </Link>

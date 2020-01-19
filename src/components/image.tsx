@@ -18,7 +18,7 @@ const Image = (): JSX.Element => {
   return (
     <div className="flex items-center justify-center bg-white border rounded-full overflow-hidden">
       <Img
-        className="w-40 h-40 object-cover object-top"
+        className="w-32 h-32 xl:w-40 xl:h-40 object-cover object-top"
         fluid={data.placeholderImage.childImageSharp.fluid}
         alt="edouard working in the boot of a car"
       />
