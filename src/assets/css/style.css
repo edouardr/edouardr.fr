@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* JetBrainsMono-Bold-Italic - © 2000-2020 JetBrains s.r.o. Developed with drive and IntelliJ IDEA. */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: italic;
+  font-weight: 700;
+  font-feature-settings: 'calt' 1, 'zero' 1;
+  font-display: swap;
+  src: local('JetBrains Mono Bold Italic'), local('JetBrainsMono-BoldItalic'),
+    url('../fonts/JetBrainsMono-Bold-Italic.woff2') format('woff2'),
+    url('../fonts/JetBrainsMono-Bold-Italic.woff') format('woff');
+}
+
+/* JetBrainsMono-Bold - © 2000-2020 JetBrains s.r.o. Developed with drive and IntelliJ IDEA. */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-feature-settings: 'calt' 1, 'zero' 1;
+  font-display: swap;
+  src: local('JetBrains Mono Bold'), local('JetBrainsMono-Bold'),
+    url('../fonts/JetBrainsMono-Bold.woff2') format('woff2'),
+    url('../fonts/JetBrainsMono-Bold.woff') format('woff');
+}
+
+/* JetBrainsMono-ExtraBold-Italic - © 2000-2020 JetBrains s.r.o. Developed with drive and IntelliJ IDEA. */
+@font-face {
+  font-family: 'JetBrains Mono ExtraBold';
+  font-style: italic;
+  font-weight: 800;
+  font-feature-settings: 'calt' 1, 'zero' 1;
+  font-display: swap;
+  src: local('JetBrains Mono ExtBd Ita'), local('JetBrainsMono-ExtraBoldItalic'),
+    url('../fonts/JetBrainsMono-ExtraBold.woff2') format('woff2'),
+    url('../fonts/JetBrainsMono-ExtraBold-Italic.woff') format('woff');
+}
+
+/* JetBrainsMono-ExtraBold - © 2000-2020 JetBrains s.r.o. Developed with drive and IntelliJ IDEA. */
+@font-face {
+  font-family: 'JetBrains Mono ExtraBold';
+  font-style: normal;
+  font-weight: 800;
+  font-feature-settings: 'calt' 1, 'zero' 1;
+  font-display: swap;
+  src: local('JetBrains Mono Extra Bold'), local('JetBrainsMono-ExtraBold'),
+    url('../fonts/JetBrainsMono-ExtraBold.woff2') format('woff2'),
+    url('../fonts/JetBrainsMono-ExtraBold.woff') format('woff');
+}
+
+/* JetBrainsMono-Italic - © 2000-2020 JetBrains s.r.o. Developed with drive and IntelliJ IDEA. */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: italic;
+  font-weight: 400;
+  font-feature-settings: 'calt' 1, 'zero' 1;
+  font-display: swap;
+  src: local('JetBrains Mono Italic'), local('JetBrainsMono-Italic'),
+    url('../fonts/JetBrainsMono-Italic.woff2') format('woff2'),
+    url('../fonts/JetBrainsMono-Italic.woff') format('woff');
+}
+
+/* JetBrainsMono-Medium-Italic - © 2000-2020 JetBrains s.r.o. Developed with drive and IntelliJ IDEA. */
+@font-face {
+  font-family: 'JetBrains Mono Medium';
+  font-style: italic;
+  font-weight: 500;
+  font-feature-settings: 'calt' 1, 'zero' 1;
+  font-display: swap;
+  src: local('JetBrains Mono Medium Italic'),
+    local('JetBrainsMono-MediumItalic'),
+    url('../fonts/JetBrainsMono-Medium-Italic.woff2') format('woff2'),
+    url('../fonts/JetBrainsMono-Medium-Italic.woff') format('woff');
+}
+
+/* JetBrainsMono-Medium - © 2000-2020 JetBrains s.r.o. Developed with drive and IntelliJ IDEA. */
+@font-face {
+  font-family: 'JetBrains Mono Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-feature-settings: 'calt' 1, 'zero' 1;
+  font-display: swap;
+  src: local('JetBrains Mono Medium'), local('JetBrainsMono-Medium'),
+    url('../fonts/JetBrainsMono-Medium.woff2') format('woff2'),
+    url('../fonts/JetBrainsMono-Medium.woff') format('woff');
+}
+
+/* JetBrainsMono-Regular - © 2000-2020 JetBrains s.r.o. Developed with drive and IntelliJ IDEA. */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-feature-settings: 'calt' 1, 'zero' 1;
+  font-display: swap;
+  src: local('JetBrains Mono Regular'), local('JetBrainsMono-Regular'),
+    url('../fonts/JetBrainsMono-Regular.woff2') format('woff2'),
+    url('../fonts/JetBrainsMono-Regular.woff') format('woff');
+}
+
+.social-icon {
+  @apply ml-5;
+}
+.social-icon-hover {
+  @apply text-greenlight-300;
+}
+.social-icon:hover {
+  @apply social-icon-hover;
+}
+
+.link-active {
+  @apply link;
+}
+
+.link {
+  @apply block flex mr-5;
+}
+.link:after {
+  opacity: 1;
+  transition: color 0.37s cubic-bezier(0.52, 0.01, 0.16, 1);
+}
+.link:hover:after {
+  border-color: red;
+  backface-visibility: hidden;
+  -ms-transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  transform-origin: left;
+  pointer-events: none;
+  bottom: -2px;
+  -webkit-transition: -webkit-transform 0.37s cubic-bezier(0.52, 0.01, 0.16, 1);
+  transition: transform 0.37s cubic-bezier(0.52, 0.01, 0.16, 1);
+  border-color: #fff;
+}
