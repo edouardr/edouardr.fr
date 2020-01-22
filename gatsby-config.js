@@ -1,7 +1,9 @@
 /* eslint-disable @typescript-eslint/camelcase */
+const path = require('path');
 const config = require('./config/website.js');
 const { URL = config.siteUrl } = process.env;
 const siteUrl = URL;
+const here = (...p) => path.join(__dirname, ...p);
 
 module.exports = {
   siteMetadata: {
@@ -32,6 +34,29 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/assets/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/blog`,
+        name: `blog`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: ['.mdx', '.md', '.markdown'],
+        gatsbyRemarkPlugins: [
+          { resolve: 'gatsby-remark-copy-linked-files' },
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              backgroundColor: '#1F6537',
+              maxWidth: 1035,
+            },
+          },
+        ],
       },
     },
     `gatsby-transformer-sharp`,
