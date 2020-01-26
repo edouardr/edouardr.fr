@@ -1,12 +1,17 @@
 import { GatsbyCreateNode } from '../types';
 
-export const createNode: GatsbyCreateNode = ({ node, actions }) => {
+export const createNode: GatsbyCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
 
   if (node.internal.type === `Mdx`) {
-    let slug: string = '';
-    if (node.fileAbsolutePath.includes('content/blog/')) {
-      slug = `/blog/${node.frontmatter.slug || parent.name}`;
+    const parent = getNode(node.parent);
+    let slug = '';
+    if (
+      node.fileAbsolutePath &&
+      node.fileAbsolutePath.includes('content/blog/')
+    ) {
+      slug = `/blog/${(node.frontmatter && node.frontmatter.slug) ||
+        (parent && parent.name!)}`;
     }
 
     createNodeField({

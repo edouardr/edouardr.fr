@@ -1,13 +1,17 @@
 import Typography from 'typography';
+import CodePlugin from 'typography-plugin-code';
+import noriegaTheme from 'typography-theme-noriega';
 
-const typography = new Typography({
-  baseFontSize: '18px',
-  baseLineHeight: 1.61,
-  headerFontFamily: ['JetBrains Mono', 'Lato', 'sans-serif'],
-  bodyFontFamily: ['JetBrains Mono', 'Lato', 'sans-serif'],
-  bodyWeight: 500,
-  headerWeight: 900,
-  boldWeight: 900,
-});
+noriegaTheme.plugins = [new CodePlugin()];
+
+noriegaTheme.baseFontSize = '18px';
+noriegaTheme.baseLineHeight = 1.61;
+noriegaTheme.headerFontFamily = ['JetBrains Mono', 'Lato', 'sans-serif'];
+noriegaTheme.bodyFontFamily = ['JetBrains Mono', 'Lato', 'sans-serif'];
+noriegaTheme.bodyWeight = 500;
+noriegaTheme.headerWeight = 900;
+noriegaTheme.boldWeight = 900;
+
+const typography = new Typography(noriegaTheme);
 
 export default typography;
