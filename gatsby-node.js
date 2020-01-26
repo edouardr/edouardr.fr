@@ -1,6 +1,8 @@
 require('source-map-support').install();
 require('ts-node').register();
 
-exports.createPages = require('./src/lib/create-pages').createPages;
+const { createPages } = require('./src/lib/create-pages');
+const { createNode } = require('./src/lib/create-node');
 
-exports.onCreateNode = require('./src/lib/create-node').createNode;
+exports.createPages = createPages;
+exports.onCreateNode = createNode;
