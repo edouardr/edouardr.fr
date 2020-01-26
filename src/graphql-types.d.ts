@@ -1388,6 +1388,7 @@ export interface MarkdownRemarkFrontmatter {
   title?: Maybe<Scalars['String']>;
   date?: Maybe<Scalars['Date']>;
   description?: Maybe<Scalars['String']>;
+  slug?: Maybe<Scalars['String']>;
 }
 
 export interface MarkdownRemarkFrontmatterDateArgs {
@@ -1423,6 +1424,7 @@ export interface Node {
   parent?: Maybe<Node>;
   children: Node[];
   internal: Internal;
+  name?: Maybe<Scalars['String']>;
 }
 
 export interface NodeFilterInput {

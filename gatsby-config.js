@@ -1,9 +1,7 @@
 /* eslint-disable @typescript-eslint/camelcase */
-const path = require('path');
 const config = require('./config/website.js');
 const { URL = config.siteUrl } = process.env;
 const siteUrl = URL;
-const here = (...p) => path.join(__dirname, ...p);
 
 module.exports = {
   siteMetadata: {
