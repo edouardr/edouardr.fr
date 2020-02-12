@@ -10,7 +10,8 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps): JSX.Element => {
   return (
     <>
-      <div className="w-full bg-greenlight-100">
+      <div className="w-full bg-greenlight-500">
+        {' '}
         <div className="lg:flex flex-row-reverse">
           <div
             id="sidebar"
@@ -28,6 +29,7 @@ const Layout = ({ children }: LayoutProps): JSX.Element => {
               </nav>
             </div>
           </div>
+
           <div
             id="content-wrapper"
             className="w-full bg-gray-100 lg:w-3/5 lg:shadow-2xl lg:px-10 lg:rounded-l-lg"
