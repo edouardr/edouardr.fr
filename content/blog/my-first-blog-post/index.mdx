@@ -110,6 +110,10 @@ function AwesomeAppComponent() {
 console.log(AwesomeAppComponent.name); // <-- logs "AwesomeAppComponent"
 
 class LessAwesomeAppComponent extends React.Component {
+  if (testLigature === true || testLigature != undefined) {
+    return;
+  }
+
   render() {
     return <div>Less Awesome</div>;
   }

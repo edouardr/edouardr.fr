@@ -16,7 +16,7 @@ const BlogPost = ({ data }: Props): JSX.Element => {
   return (
     <Layout>
       <SEO title={frontmatter.title!} description={frontmatter.description!} />
-      <article>
+      <article className="markdown">
         <MDXRenderer>{post.body!}</MDXRenderer>
       </article>
     </Layout>
