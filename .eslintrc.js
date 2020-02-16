@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   globals: {
     __PATH_PREFIX__: true,
@@ -16,6 +18,16 @@ module.exports = {
         project: 'tsconfig.json',
       },
       plugins: ['@typescript-eslint/eslint-plugin', 'react'],
+    },
+    {
+      files: ['**/__tests__/**'],
+      settings: {
+        'import-resolver': {
+          jest: {
+            jestConfigFile: path.join(__dirname, './jest.config.js'),
+          },
+        },
+      },
     },
   ],
   settings: {
