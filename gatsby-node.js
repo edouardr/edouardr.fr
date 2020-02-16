@@ -1,4 +1,3 @@
-require('source-map-support').install();
 require('ts-node').register();
 
 const { createPages } = require('./src/lib/create-pages');

@@ -1,8 +1,5 @@
 import Typography from 'typography';
-import CodePlugin from 'typography-plugin-code';
 import noriegaTheme from 'typography-theme-noriega';
-
-noriegaTheme.plugins = [new CodePlugin()];
 
 noriegaTheme.baseFontSize = '18px';
 noriegaTheme.baseLineHeight = 1.61;
