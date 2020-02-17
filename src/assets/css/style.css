@@ -197,3 +197,13 @@
   transition: transform 0.37s cubic-bezier(0.52, 0.01, 0.16, 1);
   border-color: #fff;
 }
+
+.gatsby-highlight code[class*='language-'],
+.gatsby-highlight pre[class*='language-'] {
+  font-family: 'JetBrains Mono', 'Lato', sans-serif;
+  font-feature-settings: 'liga';
+}
+.gatsby-highlight pre[class*='language-'].line-numbers {
+  padding: 0;
+  padding-left: 2.8em;
+}
