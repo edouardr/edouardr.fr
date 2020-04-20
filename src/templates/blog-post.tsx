@@ -1,9 +1,10 @@
 import * as React from 'react';
-import { graphql, PageRendererProps } from 'gatsby';
-import { Query, SitePageContext } from '../graphql-types';
+import { graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import type { PageRendererProps } from 'gatsby';
+import type { Query, SitePageContext } from '../graphql-types';
 
 interface Props extends PageRendererProps {
   pageContext: SitePageContext;

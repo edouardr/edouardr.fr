@@ -1,5 +1,5 @@
 import path from 'path';
-import {
+import type {
   GatsbyCreatePages,
   CreateBlogPages,
   CreateBlogPost,

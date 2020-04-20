@@ -1,4 +1,4 @@
-import { MarkdownRemark, Node } from './graphql-types';
+import type { MarkdownRemark, Node } from './graphql-types';
 
 interface Post {
   node: {

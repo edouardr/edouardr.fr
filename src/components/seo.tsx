@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
-import { Author } from '../../config/website';
+import type { Author } from '../../config/website';
 
 interface MetaAttribute {
   name: string;
