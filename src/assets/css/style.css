@@ -98,6 +98,9 @@
     url('../fonts/JetBrainsMono-Regular.woff2') format('woff2'),
     url('../fonts/JetBrainsMono-Regular.woff') format('woff');
 }
+html {
+  overflow: unset;
+}
 
 /* purgecss start ignore */
 /* Markdown Styles */

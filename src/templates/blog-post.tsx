@@ -18,6 +18,10 @@ const BlogPost = ({ data }: Props): JSX.Element => {
     <Layout>
       <SEO title={frontmatter.title!} description={frontmatter.description!} />
       <article className="markdown">
+        <div>
+          <h1>{frontmatter.title}</h1>
+          <em className="block">{frontmatter.date}</em>
+        </div>
         <MDXRenderer>{post.body!}</MDXRenderer>
       </article>
     </Layout>
