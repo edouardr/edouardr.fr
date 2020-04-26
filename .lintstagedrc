@@ -4,6 +4,7 @@
   ],
   "*.+(js|jsx|json|css|scss|ts|tsx|md|mdx)": [
     "prettier --write",
+    "jest --findRelatedTests",
     "git add"
   ]
 }
