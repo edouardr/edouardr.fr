@@ -27,6 +27,7 @@
       }
     },
     "upload": {
+      "target": "lhci",
       "serverBaseUrl": "https://lhci-edouardr-fr.herokuapp.com"
     }
   }
